@@ -1,0 +1,10 @@
+name: do-the-job
+on: pull_request
+jobs:
+  do-the-job:
+    name: Do the job on the runner
+    runs-on: self-hosted # run the job on the newly created runner
+    steps:
+      - name: Hello World
+        run: echo 'Hello World!'
+        
